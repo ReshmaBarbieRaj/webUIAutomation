@@ -56,7 +56,7 @@ export class HomePage{
         this.shippingMethodContinueButton=page.locator('.shipping-method-next-step-button');
         this.paymentMethodContinueButton=page.locator('.payment-method-next-step-button');
         this.paymentinfoContinueButton = page.locator('.payment-info-next-step-button');
-        this.orderConfirmButton =page.locator('.confirm-order-next-step-button');
+        this.orderConfirmButton =page.locator('#confirm-order-buttons-container button');
         this.billingFullname= page.locator('li .name').nth(0);
         this.billingEmaild =page.locator('li .email').nth(0);
         this.billingPhone = page.locator('li .phone').nth(0);
@@ -157,11 +157,11 @@ export class HomePage{
   }
 
   async clickConfirmOrder(){
-    await this.orderConfirmButton.click();
+    await this.orderConfirmButton.dblclick();
   }
 
   async orderSuccessMessage(){
-    let arrayOrderId = (await this.page.locator('.order-number').innerText()).split(' ');
+    let arrayOrderId = (await this.page.locator('.order-number strong').innerText()).split(' ');
     console.log("Order Id : " + arrayOrderId[2]);
     return await this.orderConfirmMessage.innerText();
    }

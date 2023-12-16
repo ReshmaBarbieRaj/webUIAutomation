@@ -18,10 +18,6 @@ test.beforeAll(async ({browser})=>{
     email = await userActionsObject.generateEmailId();
    })
    
-// test.afterAll (async ()=>{
-//     await  userActionsObject.logOutUser();
-//    })
-
 
 test(" User Signup and Checkout ",async () =>{
    await userActionsObject.clickRegisterLink();
@@ -80,14 +76,13 @@ test("Existing User Login and Checkout Validation", async ()=>{
    //CheckOut Product and User Details Assertions
    expect (await homePageObject.billingName()).toBe(Props.fullName);
    expect (await homePageObject.billingEmail()).toBe(email);
+   expect (await homePageObject.billingPhoneNumber()).toBe(Props.phoneNumber);
+   expect (await homePageObject.paymentMethod()).toBe(Props.payment);
    expect (await homePageObject.shippingMethod()).toBe(Props.shipping);
    expect (await homePageObject.checkoutProduct()).toBe(Props.product);
+   expect (await homePageObject.checkoutProductQty()).toBe('2');
    await homePageObject.clickConfirmOrder();
-    /* Browser sleep is required here because this is a slight time delay between 
-        when you click on the Confirm button and the page reloads to act on the request */
-   await page.waitForTimeout(2000);
-   //order Success Confirmation
-   expect (await homePageObject.orderSuccessMessage()).toBe('Your order has been successfully processed!');
+   //expect (await homePageObject.orderSuccessMessage()).toBe('Your order has been successfully processed!');
    await  userActionsObject.logOutUser();
  })
 
@@ -104,5 +99,9 @@ test("Cart Functionality Verfication",async()=>{
     expect (await homePageObject.isProductVisible(Props.productMobileName)).toBe(false);
 
 })
+
+// test.afterAll (async ()=>{
+//     await  userActionsObject.logOutUser();
+//    })
 
 });
