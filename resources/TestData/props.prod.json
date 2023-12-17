@@ -1,0 +1,29 @@
+{
+    "baseURL" : "https://demo.nopcommerce.com/",
+    "city" : "bremen",
+    "address": "inder Wisch",
+    "postalcode" : "28205",
+    "phoneNumber" : "+4915210496685",
+    "password": "ABcd@123",
+    "confirmPassword" : "ABcd@123",
+    "product" : "Apple MacBook Pro 13-inch",
+    "firstName" : "Lexi",
+    "lastName" : "Gonsalves",
+    "fullName" : "Lexi Gonsalves",
+    "day":"24",
+    "month" :"9",
+    "year" : "1998",
+    "companyName" : "RG Groups",
+    "payment": "Check / Money Order",
+    "shipping" : "Next Day Air",
+    "invaildEmail": "email123",
+    "invalidPassword" :"pass123",
+    "productLaptopName" :"Apple MacBook Pro 13-inch",
+    "productMobileName" : "HTC One M8 Android L 5.0 Lollipop",
+    "productLaptopQty" :"2",
+    "productMobileQty":"3",
+    "updateQtyCount" :"1"
+
+
+
+}
