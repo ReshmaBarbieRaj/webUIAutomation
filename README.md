@@ -92,4 +92,11 @@ If there would be any test failures, test run artifacts (videos and screenshots)
 ![image](https://github.com/ReshmaBarbieRaj/webUIAutomation/assets/85567781/b8be8b0c-a48e-442c-8906-88787471e9a8)
 
 
+## Continous Integration
+
+The project is integrated Jenkins hosted in localhost:8080, please find the screenshot of build log below :
+
+![image](https://github.com/ReshmaBarbieRaj/Bowling-Game/assets/85567781/081a7a04-3d6c-4878-ba50-f2996b66b900)
+
+
 
