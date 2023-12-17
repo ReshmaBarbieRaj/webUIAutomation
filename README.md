@@ -66,13 +66,8 @@ npx playwright test --project = chromium
 ```JS
 npx playwright test test folder/example.spec.ts
 ```
-4. For execution entire test suite on all available browsers simultaneously execute below command where "ENV" can be "qa" or "dev", `Test Cases are present in "tests" folder`:
 
-```JS
-npm run test --ENV="qa"
-```
-
-5. For execution of test in headed mode:
+4. For execution of test in headed mode:
 
 ```JS
 npx playwright test --headed
@@ -93,6 +88,13 @@ If there would be any test failures, test run artifacts (videos and screenshots)
 
 
 ## Continous Integration
+
+The automation suite is triggered on each push or pull request to the repository, please find the screenshot of build log below :
+
+![image](https://github.com/ReshmaBarbieRaj/webUIAutomation/assets/85567781/c20aee18-67ba-488c-84d0-5903340467f1)
+
+##
+
 
 The project is integrated Jenkins hosted in localhost:8080, please find the screenshot of build log below :
 
