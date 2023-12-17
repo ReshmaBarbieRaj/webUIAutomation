@@ -11,7 +11,7 @@ const config: PlaywrightTestConfig = {
   reporter : 'html',
   use: {
     actionTimeout: 30 * 1000,
-    trace: 'on',
+    trace: 'off',
     video: 'off',
     screenshot: 'only-on-failure',
     headless: true,
