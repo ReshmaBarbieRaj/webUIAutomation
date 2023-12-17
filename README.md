@@ -73,13 +73,17 @@ npx playwright test --headed
 
 ## Reports
 
-The test reports are found inside "test-results" folder
-
 To open last report:
 
 ```JS
 npx playwright show-report
 ```
+
+If there would be any test failures, test run artifacts (videos and screenshots) can be found in the test-results catalog. Also, after running the test, an HTML test report is generated which will look like this:
+
+
+![image](https://github.com/ReshmaBarbieRaj/webUIAutomation/assets/85567781/b8be8b0c-a48e-442c-8906-88787471e9a8)
+
 
 
 
