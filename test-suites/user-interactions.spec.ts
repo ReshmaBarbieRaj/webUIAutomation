@@ -82,7 +82,7 @@ test("Existing User Login and Checkout Validation", async ()=>{
    expect (await homePageObject.checkoutProduct()).toBe(Props.product);
    expect (await homePageObject.checkoutProductQty()).toBe('2');
    await homePageObject.clickConfirmOrder();
-   //expect (await homePageObject.orderSuccessMessage()).toBe('Your order has been successfully processed!');
+   expect (await homePageObject.orderSuccessMessage()).toBe('Your order has been successfully processed!');
    await  userActionsObject.logOutUser();
  })
 
