@@ -14,6 +14,8 @@ website using TypeScript along with Playwright test automation framework.
 (DDT) for the better code readability and maintainability.
 
 - The project is integrated with Jenkins for continuous integration.
+  
+- This automation suite incorporates the  page object model and data-driven testing.
 
 ## Getting Started
 
@@ -64,8 +66,13 @@ npx playwright test --project = chromium
 ```JS
 npx playwright test test folder/example.spec.ts
 ```
+4. For execution entire test suite on all available browsers simultaneously execute below command where "ENV" can be "qa" or "dev", `Test Cases are present in "tests" folder`:
 
-4. For execution of test in headed mode:
+```JS
+npm run test --ENV="qa"
+```
+
+5. For execution of test in headed mode:
 
 ```JS
 npx playwright test --headed
