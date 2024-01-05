@@ -7,7 +7,7 @@
 
 # About the Project
 
-- This project aims to automate test scenarios for the [nopCommerce demo store](https://demo.nopcommerce.com/)
+- This project aims to automate test scenarios for the [nopCommerce demo store](https://demo.nopcommerce.com/) Demo website
 website using TypeScript along with Playwright test automation framework.
 
 - The automation tests follows the Page Object Model (POM) and Data-Driven Test
@@ -16,6 +16,7 @@ website using TypeScript along with Playwright test automation framework.
 - The project is integrated with Jenkins for continuous integration.
   
 - This automation suite incorporates the  page object model and data-driven testing.
+
 
 ## Getting Started
 
